@@ -1,0 +1,54 @@
+#sidebar .mail {
+    position: absolute;
+    left: -50px;
+    top: 80px;
+    color: rgba(138, 159, 189, 0.658);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+  }
+  #sidebar .mail  .lamp{
+    height: 40px;
+    width: 2px;
+    background-color: rgba(138, 159, 189, 0.658);
+    margin-left: 108px;
+  }
+  #sidebar .mail .pipe {
+    background-color: rgba(138, 159, 189, 0.658);
+    height: 20px;
+    width: 2px; 
+    margin-left: 108px;
+  }
+  #sidebar .mail p {
+  margin-top: 100px;
+   transform: rotate(-90deg);
+  }
+  #sidebar .sosmed{
+    position: fixed;
+    right:0vw;
+    color: rgba(138, 159, 189, 0.658);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 25px;
+    bottom: 0px;
+  }
+  #sidebar i {
+  margin-right: 30px;
+  }
+  #sidebar .container{
+    background-color: rgba(138, 159, 189, 0.658);
+    height: 40px;
+    width: 2px;
+    margin-left: 11px;
+  }
+  #sidebar .content{
+    height: 20px;
+    width: 2px;
+    background-color: rgba(138, 159, 189, 0.658);
+    margin-left: 11px;
+  }
+
+
+
