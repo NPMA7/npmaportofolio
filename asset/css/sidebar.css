@@ -34,10 +34,12 @@
     font-size: 25px;
     bottom: 0px;
   }
-  #sidebar i {
+  #sidebar .sosmed a {
+    text-decoration: none;
     color: rgba(138, 159, 189, 0.658);
     margin-right: 30px;
   }
+  
   #sidebar .container{
     background-color: rgba(138, 159, 189, 0.658);
     height: 40px;
