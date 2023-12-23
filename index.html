@@ -22,16 +22,16 @@
     <!-- all in header -->
     <header>
       <nav>
-        <ol class="nav" style="cursor: pointer;">
+        <ol class="nav" style="cursor: pointer">
           <li>
-            <a href="/" class="title"
+            <a onclick="about()" class="title"
               ><img src="asset/img/profile.jpg" alt="foto-profile" />
               <div class="animasi-teks">My Portofolio</div>
               <div class="line">|</div>
             </a>
           </li>
           <li>
-            <a href="/" class="title1"
+            <a onclick="about()" class="title1"
               ><img
                 src="asset/img/profile.jpg"
                 alt="foto-profile"
@@ -56,56 +56,16 @@
           </div>
           <ul class="menu">
             <li>
-              <a
-                href="/"
-                class="about"
-                style="
-                  width: 30px;
-                  margin-top: 0px;
-                  margin-left: -145px;
-                  position: absolute;
-                "
-                >About</a
-              >
+              <a onclick="about()" class="about">About</a>
             </li>
             <li>
-              <a
-                href="#experience"
-                class="exp"
-                style="
-                  width: 80px;
-                  margin-top: 0px;
-                  margin-left: -85px;
-                  position: absolute;
-                "
-                >Experience</a
-              >
+              <a onclick="experience()" class="exps">Experience</a>
             </li>
             <li>
-              <a
-                href="#projects"
-                class="project"
-                style="
-                  width: 40px;
-                  margin-top: 0px;
-                  margin-left: 8px;
-                  position: absolute;
-                "
-                >Projects</a
-              >
+              <a onclick="project()" class="project">Projects</a>
             </li>
             <li>
-              <a
-                href="#collections"
-                class="collection"
-                style="
-                  width: 40px;
-                  margin-top: 0px;
-                  margin-left: 80px;
-                  position: absolute;
-                "
-                >Collections</a
-              >
+              <a onclick="collection()" class="collection">Collections</a>
             </li>
           </ul>
         </div>
@@ -135,7 +95,7 @@
           <a href="https://web.facebook.com/kohaku.shinba.69"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="page/not-found/not-found.html"
+          <a href="page/404/"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
           <span class="content"></span>
@@ -149,26 +109,11 @@
         <h2>HEY, I'M</h2>
         <h1>
           <div class="text-effect">
-            <span>N</span>
-            <span>U</span>
-            <span>N</span>
-            <span>&nbsp;</span>
-            <span>P</span>
-            <span>A</span>
-            <span>S</span>
-            <span>H</span>
-            <span>A</span>
-            <span>&nbsp;</span>
-            <span>M</span>
-            <span>A</span>
-            <span>L</span>
-            <span>I</span>
-            <span>K</span>
-            <span>&nbsp;</span>
-            <span>A</span>
-            <span>L</span>
-            <span>M</span>
-            <span>A</span>
+            <span>N</span><span>U</span><span>N</span> <span>P</span
+            ><span>A</span><span>S</span><span>H</span><span>A</span>
+            <span>M</span><span>A</span><span>L</span><span>I</span
+            ><span>K</span> <span>A</span><span>L</span><span>M</span
+            ><span>A</span>
           </div>
         </h1>
         <p>
@@ -184,29 +129,25 @@
       <!-- end about -->
 
       <!-- main conten experience -->
-      <section id="experience">
-            
-        </section>
-        <!-- end experience -->
+      <section id="experience"></section>
+      <!-- end experience -->
 
-        <!-- main content project  -->
-        <section id="project">
-            
-        </section>
-        <!-- end prioject -->
+      <!-- main content project  -->
+      <section id="project"></section>
+      <!-- end prioject -->
 
-        <!-- main content collection -->
-        <section id="collection">
-            <h1>collections</h1>
-            <p>Feel free to get in touch with me:</p>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <!-- end collection -->
+      <!-- main content collection -->
+      <section id="collection">
+        <h1>collections</h1>
+        <p>Feel free to get in touch with me:</p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <!-- end collection -->
     </main>
     <!-- end main content -->
 
