@@ -2,7 +2,7 @@
 
 
 #about{
-   width: 80%;
+   width: 73%;
     margin-left: 120px;
     margin-top: 100px;
     float: left;
@@ -18,7 +18,7 @@
     /* color: rgba(206, 211, 206, 0.811); */
   }
   #about p {
-    width: 50%;
+    width: 68%;
     font-size: 13px;
     line-height: 25px;
     color: rgba(138, 159, 189, 0.658);
@@ -66,39 +66,72 @@
 	-webkit-text-fill-color: transparent;
     }
 }
-
+@media screen and (max-width: 1024px) {
+ #about p {
+  width: 75%;
+}
+}
 @media screen and (max-width: 786px) {
   #about p {
-  width: 55%;
-}
-#about h1 {
-  width: 80%;
-}
-}
-@media screen and (max-width: 769px) {
-
-#about h1 {
-  width: 76%;
-}
-}
-@media screen and (max-width: 600px) {
-#about {
-  margin-left: 100px;
-  width: 70%;
-}
-#about p {
   width: 75%;
 }
 #about h1 {
-  width: 92%;
+  width: 105%;
+}
+}
+@media screen and (max-width: 769px) {
+#about {
+  margin-left: 100px;
+}
+#about h1 {
+  width: 105%;
+}
+#about p {
+  width: 89%;
+}
+}
+
+@media screen and (max-width: 601px) {
+#about {
+  margin-left: 100px;
+  width: 55%;
+}
+#about p {
+  width: 89%;
+}
+#about h1 {
+  width: 138%;
+}
+}
+@media screen and (max-width: 588px) {
+#about h1 {
+  width: 98%;
 }
 }
 @media screen and (max-width: 541px) {
+  #about {
+    margin-left: 80px;
+  }
   #about p {
-  width: 55%;
+  width: 120%;
 }
 #about h1 {
-  width: 80%;
+  width: 107%;
+}}
+@media screen and (max-width: 500px) {
+  #about {
+    margin-left: 80px;
+  }
+  #about p {
+  width: 120%;
+}
+#about h1 {
+  width: 115%;
+}
+}
+@media screen and (max-width: 452px) {
+#about h1 {
+  width: 120%;
 }
 }
 @media screen and (max-width: 436px) {
@@ -112,7 +145,7 @@
   #about h1 {
     font-size: 120%;
 
-    width: 88%;
+    width: 85%;
   }
   }
   @media screen and (max-width: 431px) {
@@ -127,7 +160,7 @@
       width: 68%;
     }
     #about p {
-      width: 75%;
+      width: 90%;
     }
     #about h1 {
       font-size: 120%;
@@ -140,6 +173,11 @@
   
       width: 88%;
     }}
+    @media screen and (max-width: 384px) {
+    #about h1 {
+      width: 90%;
+    }
+    }
   @media screen and (max-width: 376px) {
     #about {
       margin-left: 80px;
@@ -150,9 +188,9 @@
       font-size: 100%;
     }
     #about h1 {
-      font-size: 110%;
+      font-size: 120%;
   
-      width: 88%;
+      width: 94%;
     }
     #about h2 {
       font-size: 110%;
@@ -160,7 +198,17 @@
       width: 88%;
     }
     }
-    
+    @media screen and (max-width: 350px) {
+    #about h1 {
+      width: 95%;
+    }
+    @media screen and (max-width: 344px) {
+    #about h1 {
+      font-size: 100%;
+      width: 90%;
+    }
+    }
+    }
   @media screen and (max-width: 321px) {
     #about {
       margin-left: 70px;
@@ -181,7 +229,7 @@
       width: 88%;
     }
     }
-    @media screen and (max-width: 281px) {
+    @media screen and (max-width: 284px) {
       #about p {
       width: 55%;
     }
