@@ -2,8 +2,8 @@
 
 
 #about{
-   width: 73%;
-    margin-left: 120px;
+   width: 54%;
+    margin-left: 19vw;
     margin-top: 100px;
     float: left;
     color: white;
@@ -14,14 +14,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  text-shadow: 2px 2px #353f3fb9;   
     font-size: 20px;
     /* color: rgba(206, 211, 206, 0.811); */
   }
   #about p {
-    width: 68%;
+    width: 90%;
     font-size: 13px;
     line-height: 25px;
     color: rgba(138, 159, 189, 0.658);
+  }
+  #about h1 .text-effect{
+    display: block;
+    text-shadow: 3px 4px #506365b9;   
   }
   
 
@@ -66,174 +71,39 @@
 	-webkit-text-fill-color: transparent;
     }
 }
+
 @media screen and (max-width: 1024px) {
- #about p {
-  width: 75%;
-}
-}
-@media screen and (max-width: 786px) {
-  #about p {
-  width: 75%;
-}
-#about h1 {
-  width: 105%;
-}
-}
-@media screen and (max-width: 769px) {
-#about {
-  margin-left: 100px;
-}
-#about h1 {
-  width: 105%;
-}
-#about p {
-  width: 89%;
-}
-}
-
-@media screen and (max-width: 601px) {
-#about {
-  margin-left: 100px;
-  width: 55%;
-}
-#about p {
-  width: 89%;
-}
-#about h1 {
-  width: 138%;
-}
-}
-@media screen and (max-width: 588px) {
-#about h1 {
-  width: 98%;
-}
-}
-@media screen and (max-width: 541px) {
-  #about {
-    margin-left: 80px;
-  }
-  #about p {
-  width: 120%;
-}
-#about h1 {
-  width: 107%;
-}}
-@media screen and (max-width: 500px) {
-  #about {
-    margin-left: 80px;
-  }
-  #about p {
-  width: 120%;
-}
-#about h1 {
-  width: 115%;
-}
-}
-@media screen and (max-width: 452px) {
-#about h1 {
-  width: 120%;
-}
-}
-@media screen and (max-width: 436px) {
-  #about {
-    margin-left: 80px;
-    width: 70%;
-  }
-  #about p {
+  #about{
     width: 75%;
-  }
-  #about h1 {
-    font-size: 120%;
-
-    width: 85%;
-  }
-  }
-  @media screen and (max-width: 431px) {
-
-  #about h1 {
-    width: 80%;
-  }
-}
-  @media screen and (max-width: 426px) {
-    #about {
-      margin-left: 80px;
-      width: 68%;
-    }
-    #about p {
-      width: 90%;
-    }
-    #about h1 {
-      font-size: 120%;
-  
-      width: 88%;
-
-    }
-    #about h2 {
-      font-size: 120%;
-  
-      width: 88%;
-    }}
-    @media screen and (max-width: 384px) {
-    #about h1 {
-      width: 90%;
-    }
-    }
-  @media screen and (max-width: 376px) {
-    #about {
-      margin-left: 80px;
+     margin-left: 19vw;
+     margin-top: 100px;
+     }
+     #about p {
       width: 70%;
     }
-    #about p {
-      width: 87%;
-      font-size: 100%;
-    }
-    #about h1 {
-      font-size: 120%;
-  
-      width: 94%;
-    }
-    #about h2 {
-      font-size: 110%;
-  
-      width: 88%;
-    }
-    }
-    @media screen and (max-width: 350px) {
-    #about h1 {
-      width: 95%;
-    }
-    @media screen and (max-width: 344px) {
-    #about h1 {
-      font-size: 100%;
-      width: 90%;
-    }
-    }
-    }
-  @media screen and (max-width: 321px) {
-    #about {
-      margin-left: 70px;
-      width: 68%;
-    }
-    #about p {
-      width: 84%;
-      font-size: 100%;
-    }
-    #about h1 {
-      font-size: 100%;
-  
-      width: 100%;
-    }
-    #about h2 {
-      font-size: 110%;
-  
-      width: 88%;
-    }
-    }
-    @media screen and (max-width: 284px) {
-      #about p {
-      width: 55%;
-    }
-    #about h1 {
-      width: 110%;
-    }
-  }
+}
+@media screen and (max-width: 610px) {
+  #about{
+    width: 65%;
+     margin-left: 22vw;
+     margin-top: 100px;
+     }
+}
+@media screen and (max-width: 510px) {
+  #about{
+    width: 60%;
+     margin-left: 22vw;
+     margin-top: 100px;
+     }
+}
+@media screen and (max-width: 320px) {
+  #about{
+    width: 60%;
+    margin-left: 25vw;
+    margin-top: 100px;
+    font-size: 70%;
+     }
+     #about h2 {
+      font-size: 170%;
+     }
+}
