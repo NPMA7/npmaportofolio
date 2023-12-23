@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+#about{
+   width: 80%;
+    margin-left: 120px;
+    margin-top: 100px;
+    float: left;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  }
+  #about h2 {
+    background: -webkit-linear-gradient(#eee, #4a5f72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    font-size: 20px;
+    /* color: rgba(206, 211, 206, 0.811); */
+  }
+  #about p {
+    width: 50%;
+    font-size: 13px;
+    line-height: 25px;
+    color: rgba(138, 159, 189, 0.658);
+  }
+  
+
+#about .text-effect{
+    color: rgb(5, 136, 70);
+    font-family: "Poppins", sans-serif;
+    font-size:  190%;
+    font-weight: 700;
+    margin-left: 5px;
+    display: block;
+    word-spacing: 0px;
+    position: relative;
+}
+#about .text-effect span{ animation: animate linear 2000ms infinite; }
+#about .text-effect span:nth-child(1n){ animation-delay: 0s; }
+#about .text-effect span:nth-child(2n){ animation-delay: 100ms; }
+#about .text-effect span:nth-child(3n){ animation-delay: 200ms; }
+#about .text-effect span:nth-child(4n){ animation-delay: 300ms; }
+#about .text-effect span:nth-child(5n){ animation-delay: 400ms; }
+#about .text-effect span:nth-child(6n){ animation-delay: 500ms; }
+#about .text-effect span:nth-child(7n){ animation-delay: 600ms; }
+#about .text-effect span:nth-child(8n){ animation-delay: 700ms; }
+#about .text-effect span:nth-child(9n){ animation-delay: 800ms; }
+#about .text-effect span:nth-child(10n){ animation-delay: 900ms; }
+#about .text-effect span:nth-child(11n){ animation-delay: 1000ms; }
+#about .text-effect span:nth-child(12n){ animation-delay: 1100ms; }
+#about .text-effect span:nth-child(13n){ animation-delay: 1200ms; }
+#about .text-effect span:nth-child(14n){ animation-delay: 1300ms; }
+#about .text-effect span:nth-child(15n){ animation-delay: 1400ms; }
+#about .text-effect span:nth-child(16n){ animation-delay: 1500ms; }
+#about .text-effect span:nth-child(17n){ animation-delay: 1600ms; }
+#about .text-effect span:nth-child(18n){ animation-delay: 1700ms; }
+#about .text-effect span:nth-child(19n){ animation-delay: 1800ms; }
+#about .text-effect span:nth-child(20n){ animation-delay: 1900ms; }
+
+@keyframes animate{
+    0%{ opacity: 0.3; }
+    100%{
+       opacity:1;
+       background: linear-gradient(to right,rgba(138,  159, 189, 0.658) 0% 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width: 786px) {
+  #about p {
+  width: 55%;
+}
+#about h1 {
+  width: 80%;
+}
+}
+@media screen and (max-width: 769px) {
+
+#about h1 {
+  width: 76%;
+}
+}
+@media screen and (max-width: 600px) {
+#about {
+  margin-left: 100px;
+  width: 70%;
+}
+#about p {
+  width: 75%;
+}
+#about h1 {
+  width: 92%;
+}
+}
+@media screen and (max-width: 541px) {
+  #about p {
+  width: 55%;
+}
+#about h1 {
+  width: 80%;
+}
+}
+@media screen and (max-width: 436px) {
+  #about {
+    margin-left: 80px;
+    width: 70%;
+  }
+  #about p {
+    width: 75%;
+  }
+  #about h1 {
+    font-size: 120%;
+
+    width: 88%;
+  }
+  }
+  @media screen and (max-width: 431px) {
+
+  #about h1 {
+    width: 80%;
+  }
+}
+  @media screen and (max-width: 426px) {
+    #about {
+      margin-left: 80px;
+      width: 68%;
+    }
+    #about p {
+      width: 75%;
+    }
+    #about h1 {
+      font-size: 120%;
+  
+      width: 88%;
+
+    }
+    #about h2 {
+      font-size: 120%;
+  
+      width: 88%;
+    }}
+  @media screen and (max-width: 376px) {
+    #about {
+      margin-left: 80px;
+      width: 70%;
+    }
+    #about p {
+      width: 87%;
+      font-size: 100%;
+    }
+    #about h1 {
+      font-size: 110%;
+  
+      width: 88%;
+    }
+    #about h2 {
+      font-size: 110%;
+  
+      width: 88%;
+    }
+    }
+    
+  @media screen and (max-width: 321px) {
+    #about {
+      margin-left: 70px;
+      width: 68%;
+    }
+    #about p {
+      width: 84%;
+      font-size: 100%;
+    }
+    #about h1 {
+      font-size: 100%;
+  
+      width: 100%;
+    }
+    #about h2 {
+      font-size: 110%;
+  
+      width: 88%;
+    }
+    }
+    @media screen and (max-width: 281px) {
+      #about p {
+      width: 55%;
+    }
+    #about h1 {
+      width: 110%;
+    }
+  }

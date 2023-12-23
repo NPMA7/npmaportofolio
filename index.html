@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="asset/css/pages/main/main.css" />
     <link rel="stylesheet" href="asset/css/pages/main/sidebar.css" />
     <link rel="icon" href="asset/img/foto1-circle.png" />
+    <link rel="stylesheet" href="asset/css/pages/main/main-colletion.css" />
+    <link rel="stylesheet" href="asset/css/pages/main/main-experience.css" />
+    <link rel="stylesheet" href="asset/css/pages/main/main-project.css" />
   </head>
   <body>
+    <!-- all in header -->
     <header>
       <nav>
-        <ol class="nav">
+        <ol class="nav" style="cursor: pointer;">
           <li>
             <a href="/" class="title"
               ><img src="asset/img/profile.jpg" alt="foto-profile" />
@@ -28,15 +32,19 @@
           </li>
           <li>
             <a href="/" class="title1"
-              ><img src="asset/img/profile.jpg" alt="foto-profile" />
+              ><img
+                src="asset/img/profile.jpg"
+                alt="foto-profile"
+                class="profile-header1"
+              />
               <div class="animasi-teks1">My Portofolio</div>
               <div class="line1">|</div></a
             >
           </li>
-          <li><a href="/" class="about">About</a></li>
-          <li><a href="#experience" class="exp">Experience</a></li>
-          <li><a href="#projects" class="project">Projects</a></li>
-          <li><a href="#collections" class="collection">Collections</a></li>
+          <li><a onclick="about()" class="about">About</a></li>
+          <li><a onclick="experience()" class="exp">Experience</a></li>
+          <li><a onclick="project()" class="project">Projects</a></li>
+          <li><a onclick="collection()" class="collection">Collections</a></li>
         </ol>
 
         <div class="hamburger">
@@ -103,7 +111,11 @@
         </div>
       </nav>
     </header>
+    <!-- end header -->
+
+    <!-- main content -->
     <main>
+      <!-- sidebar -->
       <section id="sidebar">
         <div class="mail">
           <span class="pipe"></span>
@@ -111,15 +123,28 @@
           <p>pashamalik9371@gmail.com</p>
         </div>
         <div class="sosmed">
-          <a href="https://github.com/NPMA7" ><i class="fa-brands fa-github" ></i></a>
-          <a href="https://www.instagram.com/kohaku_shinba" ><i class="fa-brands fa-instagram" ></i></a>
-          <a href="https://www.tiktok.com/@_kohaku_s"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://web.facebook.com/kohaku.shinba.69"><i class="fa-brands fa-facebook"></i></a>
-          <a href="page/not-found/not-found.html"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/NPMA7"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/kohaku_shinba"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@_kohaku_s"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://web.facebook.com/kohaku.shinba.69"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="page/not-found/not-found.html"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
           <span class="content"></span>
           <span class="container"></span>
         </div>
       </section>
+      <!-- end sidebar -->
+
+      <!-- main content about -->
       <section id="about">
         <h2>HEY, I'M</h2>
         <h1>
@@ -140,30 +165,38 @@
             <span>I</span>
             <span>K</span>
             <span>&nbsp;</span>
-            <span>A</span><span>L</span><span>M</span> <span>A</span>
+            <span>A</span>
+            <span>L</span>
+            <span>M</span>
+            <span>A</span>
           </div>
         </h1>
-        <p>I AM A STUDENT FROM THE PASUNDAN 2 BANJARAN VOCATIONAL HIGHSCHOOL.
-        </p><p>I LIKE PLAYING BASKETBALL, SOCCER AND VIDIO GAMES. I ALSO LIKE READING BOOKS INCLUDING COMIC BOOKS 
-        AND I'M VERY EXCITED IF THERE'S SOMETHING NEW FOR ME.
-        MY FAVORITE STUDY IS PHYSICS AND THE ACTIVITIES I LIKE IS SLEEP.
-         </p>
+        <p>
+          I AM A STUDENT FROM THE PASUNDAN 2 BANJARAN VOCATIONAL HIGHSCHOOL.
+        </p>
+        <p>
+          I LIKE PLAYING BASKETBALL, SOCCER AND VIDIO GAMES. I ALSO LIKE READING
+          BOOKS INCLUDING COMIC BOOKS AND I'M VERY EXCITED IF THERE'S SOMETHING
+          NEW FOR ME. MY FAVORITE STUDY IS PHYSICS AND THE ACTIVITIES I LIKE IS
+          SLEEP.
+        </p>
       </section>
-      <!-- <section id="portfolio">
-            <h1>Portfolio</h1>
-            <div class="gallery">
-                <div class="gallery-item" onclick="openModal(0)">
-                    <img src="img/portfolio1.jpg" alt="Project 1">
-                    <p>Project 1</p>
-                </div>
-                <div class="gallery-item" onclick="openModal(1)">
-                    <img src="img/portfolio2.jpg" alt="Project 2">
-                    <p>Project 2</p>
-                </div>
+      <!-- end about -->
 
-            </div>
+      <!-- main conten experience -->
+      <section id="experience">
+            
         </section>
-        <section id="collections">
+        <!-- end experience -->
+
+        <!-- main content project  -->
+        <section id="project">
+            
+        </section>
+        <!-- end prioject -->
+
+        <!-- main content collection -->
+        <section id="collection">
             <h1>collections</h1>
             <p>Feel free to get in touch with me:</p>
             <form id="contact-form">
@@ -172,11 +205,18 @@
                 <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
-        </section> -->
+        </section>
+        <!-- end collection -->
     </main>
+    <!-- end main content -->
+
     <!-- <footer>
         <p>&copy; Pasha Malik. All rights reserved.</p>
     </footer> -->
-    <script src="asset/js/script.js"></script>
+    <script src="asset/js/pages/main/main-about.js"></script>
+    <script src="asset/js/pages/main/main-collection.js"></script>
+    <script src="asset/js/pages/main/main-experience.js"></script>
+    <script src="asset/js/pages/main/main-project.js"></script>
+    <script src="asset/js/pages/main/main.js"></script>
   </body>
 </html>
