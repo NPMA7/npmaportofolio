@@ -38,7 +38,7 @@ a:hover {
 
 .text-wrapper {
   position: absolute;
-  top: -20%;
+  top: -40%;
   width: 97.5vw;
   height: 70%;
   display: flex;
@@ -48,24 +48,31 @@ a:hover {
 }
 
 .title {
+  position: absolute;
   font-size: 5em;
   font-weight: 700;
-
+  top: 100%;
   color: rgba(60, 248, 69, 0.811);
 }
 
 .subtitle {
+  position: absolute;
   font-size: 40px;
   font-weight: 700;
+  top: 115%;
   color: #ee4b5e;
 }
 .isi {
+  position: absolute;
   font-size: 18px;
   text-align: center;
+  top: 130%;
   margin: 30px;
   color: rgba(212, 209, 209, 0.877);
 }
 .buttons {
+  position: absolute;
+  top:  150%;
   margin: 30px;
   font-weight: 700;
   border: 2px solid #ee4b5e;
@@ -86,10 +93,9 @@ a:hover {
 @media screen and (max-width: 787px) {
   .shape {
     font-size: 20em;
-    margin-top: 70px;
+    margin-top: 200px;
   }
   .text-wrapper {
-    top: -5%;
     width: 92%;
   }
   .title {
