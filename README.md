@@ -2,7 +2,8 @@
 <p align="center">MY PORTOFOLIO</p>
 
 # Portofolio
- https://npma7.github.io/portofolio.github.io. This Web Profile Portofolio For a Projects
+ https://npmaportofolio.vercel.app 
+ This Web Profile Portofolio For a Projects
 
 # Use
 PURE HTML CSS JAVASCRIPT
