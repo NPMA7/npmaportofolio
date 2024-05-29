@@ -1,0 +1,86 @@
+header {
+  --text-primary: rgb(255, 255, 255);
+  --text--seondary:#84e6ffef;
+  --text-optional:rgba(60, 248, 69, 0.811);
+  --bg-primary: rgb(31, 35, 48);
+}
+header div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    top: 1em;
+    padding-left: 2.5em;
+}
+header .profile img {
+    box-shadow: 0px 1px 16px 2px #cdcdcd;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+header .profile a {
+    font-size: xx-large;
+    text-decoration: none;
+    text-shadow: 3px 4px #09747eb9;
+}
+header nav ol {
+  background: var(--bg-primary);
+  position: absolute;
+  top: .7em;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 2.5em;
+}
+header nav ol li {
+  padding: .63em;
+  list-style: none;
+  font-size: larger;
+}
+header nav ol li a {
+  color: rgba(212, 209, 209, 0.877);
+  text-decoration: none;
+}
+
+header ol li a:hover {
+  color: var(--text-primary);
+}
+header nav ol li span {
+  cursor: pointer;
+}
+
+header nav ol li a span:hover {
+  color: rgb(156, 250, 161);
+}
+header nav .hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) { 
+  header nav ol, header  nav .hamburger #close {
+    display: none;
+  }
+  header nav .hamburger {
+    display: block;
+    position: absolute;
+    right: 3em;
+    cursor: pointer;
+
+  }
+  header nav .hamburger ol {
+    width: 2em;
+    top: 3em;
+    left: 3em;
+    z-index: 1;
+  }
+  header nav .hamburger ol li{
+    margin-left: -2em;
+  
+  }
+  header nav .hamburger ol li a{
+   font-size: small;
+   
+  }
+ }

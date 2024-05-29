@@ -1,0 +1,93 @@
+#sidebar {
+  --sidebar-color: rgba(138, 159, 189, 0.658);
+}
+
+#sidebar .mail {
+  position: absolute;
+  left: -35px;
+  top: 100px;
+  color: var(--sidebar-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 15px;
+}
+
+#sidebar .mail .lamp,
+#sidebar .mail .pipe {
+  background-color: var(--sidebar-color);
+  width: 2px;
+  margin-left: 100px;
+}
+
+#sidebar .mail .lamp {
+  height: 40px;
+}
+
+#sidebar .mail .pipe {
+  height: 20px;
+}
+
+#sidebar .mail p {
+  margin-top: 100px;
+  transform: rotate(-90deg);
+}
+
+#sidebar .sosmed {
+  z-index: 1;
+  padding: 2em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sidebar .sosmed a {
+  text-decoration: none;
+  color: var(--sidebar-color);
+}
+#sidebar .sosmed i {
+  color: var(--sidebar-color);
+  font-size: x-large;
+}
+#sidebar .sosmed i:hover {
+  color: rgb(152, 167, 188);
+  padding: 0.3em;
+  border: 3px solid whitesmoke;
+  border-radius: 50%;
+}
+
+#sidebar .sosmed .tiktok:hover::before {
+  content: "Tiktok";
+  padding-right: 0.5em;
+}
+#sidebar .sosmed .github:hover::before {
+  content: "Github";
+  padding-right: 0.5em;
+}
+#sidebar .sosmed .instagram:hover::before {
+  content: "Instagram";
+  padding-right: 0.5em;
+}
+#sidebar .sosmed .facebook:hover::before {
+  content: "Facebook";
+  padding-right: 0.5em;
+}
+#sidebar .sosmed .linkedin:hover::before {
+  content: "LinkedIn";
+  padding-right: 0.5em;
+}
+
+@media (max-width: 640px) {
+  #sidebar .sosmed .tiktok:hover::before,
+  #sidebar .sosmed .github:hover::before,
+  #sidebar .sosmed .instagram:hover::before,
+  #sidebar .sosmed .facebook:hover::before,
+  #sidebar .sosmed .linkedin:hover::before {
+    display: none;
+  }
+  #sidebar .sosmed i {
+    font-size: large;
+  }
+}

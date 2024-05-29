@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/style/main/header.css" />
+    <link rel="stylesheet" href="src/style/main/sidebar.css" />
+    <link rel="stylesheet" href="src/style/main/main.css" />
+    <link rel="stylesheet" href="src/style/main/main_about.css" />
+    <link rel="icon" href="src/assets/images/foto1-circle.png" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="profile">
+        <img src="src/assets/images/profile.jpg" alt="profile" />
+        <a class="toggle-text" href="#">My Portofolio</a>
+      </div>
+      <nav>
+        <ol>
+          <li>
+            <a href="#"><span class="toggle-text">01. </span>About</a>
+          </li>
+          <li>
+            <a href="#"><span class="toggle-text">02. </span>Experience</a>
+          </li>
+          <li>
+            <a href="#"><span class="toggle-text">03. </span>Projects</a>
+          </li>
+          <li>
+            <a href="#"><span class="toggle-text">04. </span>Collections</a>
+          </li>
+        </ol>
+        <div class="hamburger">
+            <div id="icon" class="toggle-text"><i class="fa-solid fa-bars"></i></div>
+            <div id="close" class="toggle-text"><i class="fa-solid fa-close"></i></div>
+            <ol class="menu">
+                <li>
+                    <a href="#"><span class="toggle-text">01. </span>About</a>
+                </li>
+                <li>
+                    <a href="#"><span class="toggle-text">02. </span>Experience</a>
+                </li>
+                <li>
+                    <a href="#"><span class="toggle-text">03. </span>Projects</a>
+                </li>
+                <li>
+                    <a href="#"><span class="toggle-text">04. </span>Collections</a>
+                </li>
+            </ol>
+        </div>
+        </nav>
+    </header>
+    <main>
+      <section id="sidebar">
+        <div class="mail">
+          <span class="pipe"></span><span class="lamp"></span>
+          <p>pashamalik9371@gmail.com</p>
+        </div>
+        <div class="sosmed">
+          <a class="github" href="https://github.com/NPMA7"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a class="tiktok" href="https://www.tiktok.com/@_kohaku_s"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a class="instagram" href="https://www.instagram.com/kohaku_shinba"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="facebook" href="https://web.facebook.com/kohaku.shinba.69"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="linkedin" href="/pages/404/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>HEY, I'M</h2>
+        <div class="nama">
+          <h1><span class="toggle-text">N PASHA </span>MALIK ALMA</h1>
+        </div>
+        <h4>Bandung, Jawa Barat, Indonesia</h4>
+        <p class="intro">
+          I AM A STUDENT FROM THE PASUNDAN 2 BANJARAN VOCATIONAL HIGHSCHOOL.
+        </p>
+        <p>
+          I LIKE PLAYING BASKETBALL, SOCCER AND VIDIO GAMES. I ALSO LIKE READING
+          BOOKS INCLUDING COMIC BOOKS AND I'M VERY EXCITED IF THERE'S SOMETHING
+          NEW FOR ME. MY FAVORITE STUDY IS PHYSICS AND THE ACTIVITIES I LIKE IS
+          SLEEP.
+        </p>
+        
+      </section>
+
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider round"></span>
+    </label>
+    </main>
+
+    <script src="src/js/colorSwitch.js"></script>
+    <script src="src/js/hamburger.js"></script>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
