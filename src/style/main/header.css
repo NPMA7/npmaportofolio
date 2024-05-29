@@ -4,7 +4,7 @@ header {
   --text-optional:rgba(60, 248, 69, 0.811);
   --bg-primary: rgb(31, 35, 48);
 }
-header div {
+header .profile {
     position: relative;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ header nav ol {
   margin-right: 2.5em;
 }
 header nav ol li {
-  padding: .63em;
+  padding: .8em;
   list-style: none;
   font-size: larger;
 }
@@ -65,6 +65,7 @@ header nav .hamburger {
   header nav .hamburger {
     display: block;
     position: absolute;
+    top: 2.2em;
     right: 3em;
     cursor: pointer;
 
@@ -72,11 +73,11 @@ header nav .hamburger {
   header nav .hamburger ol {
     width: 2em;
     top: 3em;
-    left: 3em;
+    left: -2em;
     z-index: 1;
   }
   header nav .hamburger ol li{
-    margin-left: -2em;
+    margin-left: -2.5em;
   
   }
   header nav .hamburger ol li a{

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="src/style/main/sidebar.css" />
     <link rel="stylesheet" href="src/style/main/main.css" />
     <link rel="stylesheet" href="src/style/main/main_about.css" />
+    <link rel="stylesheet" href="src/style/main/main_skills.css" />
     <link rel="icon" href="src/assets/images/foto1-circle.png" />
   </head>
   <body>
@@ -24,37 +25,41 @@
       <nav>
         <ol>
           <li>
-            <a href="#"><span class="toggle-text">01. </span>About</a>
+            <a href="#" id="aboutNavbar"><span class="toggle-text">01. </span>About</a>
           </li>
           <li>
-            <a href="#"><span class="toggle-text">02. </span>Experience</a>
+            <a href="#" id="skillsNavbar" ><span class="toggle-text">02. </span>Skills</a>
           </li>
           <li>
-            <a href="#"><span class="toggle-text">03. </span>Projects</a>
+            <a href="#" id="experienceNavbar"><span class="toggle-text">03. </span>Experience</a>
           </li>
           <li>
-            <a href="#"><span class="toggle-text">04. </span>Collections</a>
+            <a href="#" id="collectionsNavbar"><span class="toggle-text">04. </span>Collections</a>
           </li>
         </ol>
         <div class="hamburger">
-            <div id="icon" class="toggle-text"><i class="fa-solid fa-bars"></i></div>
-            <div id="close" class="toggle-text"><i class="fa-solid fa-close"></i></div>
-            <ol class="menu">
-                <li>
-                    <a href="#"><span class="toggle-text">01. </span>About</a>
-                </li>
-                <li>
-                    <a href="#"><span class="toggle-text">02. </span>Experience</a>
-                </li>
-                <li>
-                    <a href="#"><span class="toggle-text">03. </span>Projects</a>
-                </li>
-                <li>
-                    <a href="#"><span class="toggle-text">04. </span>Collections</a>
-                </li>
-            </ol>
+          <div id="icon" class="toggle-text">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="close" class="toggle-text">
+            <i class="fa-solid fa-close"></i>
+          </div>
+          <ol class="menu">
+            <li>
+              <a href="#" id="aboutNav" ><span class="toggle-text">01. </span>About</a>
+            </li>
+            <li>
+              <a href="#" id="skillsNav"><span class="toggle-text">02. </span>Skills</a>
+            </li>
+            <li>
+              <a href="#" id="experienceNav"><span class="toggle-text">03. </span>Experience</a>
+            </li>
+            <li>
+              <a href="#" id="collectionsNav"><span class="toggle-text">04. </span>Collections</a>
+            </li>
+          </ol>
         </div>
-        </nav>
+      </nav>
     </header>
     <main>
       <section id="sidebar">
@@ -99,16 +104,65 @@
         
       </section>
 
+      <section id="skills">
+        <h1 ><span class="toggle-text">Programing</span> Languages & Tools</h1>
+        <div>
+          <span
+            ><h4>HTML</h4>
+            <i
+              class="fa-brands fa-html5"
+              style="color: rgb(255, 140, 0); content: HTML"
+            ></i
+          ></span>
+          <span
+            ><h4>CSS</h4>
+            <i class="fa-brands fa-css3-alt" style="color: rgb(0, 132, 255)"></i
+          ></span>
+          <span
+            ><h4>JAVASCRIPT</h4>
+            <i class="fa-brands fa-js" style="color: rgb(219, 219, 17)"></i
+          ></span>
+          <span
+            ><h4>REACT</h4>
+            <i class="fa-brands fa-react" style="color: lightseagreen"></i
+          ></span>
+          <span
+            ><h4>TAILWIND</h4>
+            <i class="fa-tailwind"></i></span>
+          <span
+            ><h4>NEXT</h4>
+            <i class="fa-nextjs"></i>
+        </span>
+          <span
+            ><h4>MYSQL</h4>
+            <i class="fa-solid fa-database" style="color: rgb(41, 115, 161)"></i
+          ></span>
+          <span
+            ><h4>NPM</h4>
+            <i class="fa-brands fa-npm" style="color: rgb(227, 60, 60)"></i
+          ></span>
+          <span
+            ><h4>GIT</h4>
+            <i class="fa-brands fa-git" style="color: rgb(119, 116, 116)"></i
+          ></span>
+        </div>
+      </section>
+
       <label class="switch">
-        <input type="checkbox" id="toggleSwitch">
+        <input type="checkbox" id="toggleSwitch" />
         <span class="slider round"></span>
-    </label>
+      </label>
     </main>
 
+    <script src="src/js/main.js"></script>
     <script src="src/js/colorSwitch.js"></script>
     <script src="src/js/hamburger.js"></script>
     <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
   </body>

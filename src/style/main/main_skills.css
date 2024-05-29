@@ -1,0 +1,136 @@
+#skills {
+  color: rgba(138, 159, 189, 0.658);
+  position: relative;
+  top: 5em;
+  left: 7em;
+  z-index: 0;
+  width: 50%;
+}
+#skills h1 {
+  font-size: x-large;
+  color: rgba(228, 247, 244, 0.797);
+}
+#skills h1 .toggle-text {
+  color: #d6f0f0ef;
+}
+#skills div {
+  position: relative;
+  animation: animate linear 600ms;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  row-gap: 4vw;
+  margin-top: 3em;
+  grid-auto-rows: minmax(50px, auto);
+}
+#skills div span {
+  width: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2.8em;
+  background-color: rgb(54, 59, 76);
+  border: 3px solid rgba(255, 255, 255, 0.455);
+}
+#skills div span:hover {
+  filter: brightness(70%);
+}
+#skills div span h4 {
+  position: absolute;
+}
+#skills div span i {
+  font-size: x-large;
+  margin-left: 6.5em;
+  width: 20px;
+}
+#skills div span .fa-nextjs::before {
+  content: url(/src/assets/svg/nextjs-icon-svgrepo-com.svg);
+}
+#skills div span .fa-tailwind::before {
+  content: url(/src/assets/svg/tailwindcss-svgrepo-com.svg);
+}
+
+@keyframes animate {
+  0% {
+    left: -2em;
+    opacity: 0;
+  }
+  100% {
+    left: 0.2em;
+  }
+}
+@media (max-width: 1180px) {
+  #skills div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 960px) {
+  #skills div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #skills h1 {
+    font-size: large;
+  }
+  #skills div span {
+    width: 7em;
+  }
+  #skills div span i,
+  #skills div span img {
+    margin-left: 6.5em;
+  }
+}
+@media (max-width: 640px) {
+  #skills div {
+    row-gap: 1.5em;
+  }
+  #skills div span {
+    width: 0em;
+  }
+  #skills div span h4 {
+    display: none;
+  }
+  #skills div span i,
+  #skills div span img {
+    padding: 0.4em;
+    margin-left: 1.8em;
+  }
+  #skills div span i:hover::before {
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #skills div span .fa-html5:hover::before {
+    content: "HTML";
+  }
+  #skills div span .fa-css3-alt:hover::before {
+    content: "CSS";
+  }
+  #skills div span .fa-js:hover::before {
+    content: "JAVA" "SCRIPT";
+    font-size: 0.4rem;
+  }
+
+  #skills div span .fa-tailwind:hover::before {
+    content: "TAILWIND";
+    color: lightseagreen;
+  }
+  #skills div span .fa-nextjs:hover::before {
+    content: "NEXT";
+    color: white;
+  }
+  #skills div span .fa-react:hover::before {
+    content: "REACT";
+  }
+  #skills div span .fa-database:hover::before {
+    content: "MYSQL";
+  }
+  #skills div span .fa-npm:hover::before {
+    content: "NPM";
+  }
+  #skills div span .fa-git:hover::before {
+    content: "GIT";
+  }
+}
