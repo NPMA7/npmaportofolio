@@ -2,28 +2,25 @@
   color: rgba(138, 159, 189, 0.658);
   position: relative;
   top: 5em;
-  left: 7em;
+  left: 25vw;
   z-index: 0;
   width: 50%;
 }
-#skills h1 {
+#skills h2 {
   font-size: x-large;
   color: rgba(228, 247, 244, 0.797);
 }
-#skills h1 .toggle-text {
-  color: #d6f0f0ef;
-}
-#skills div {
+#skills .programing {
   position: relative;
-  animation: animate linear 600ms;
+  animation: animate linear 1500ms;
+  left: .5em;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  row-gap: 4vw;
-  margin-top: 3em;
+  row-gap: 2vw;
   grid-auto-rows: minmax(50px, auto);
 }
-#skills div span {
+#skills .programing span{
   width: 9em;
   display: flex;
   align-items: center;
@@ -32,24 +29,74 @@
   background-color: rgb(54, 59, 76);
   border: 3px solid rgba(255, 255, 255, 0.455);
 }
-#skills div span:hover {
+
+#skills .programing span:hover {
   filter: brightness(70%);
 }
-#skills div span h4 {
+#skills .programing span h4 {
   position: absolute;
 }
-#skills div span i {
+#skills .programing span i {
   font-size: x-large;
   margin-left: 6.5em;
   width: 20px;
 }
-#skills div span .fa-nextjs::before {
+#skills .programing span .fa-nextjs::before {
   content: url(/src/assets/svg/nextjs-icon-svgrepo-com.svg);
 }
-#skills div span .fa-tailwind::before {
+#skills .programing span .fa-tailwind::before {
   content: url(/src/assets/svg/tailwindcss-svgrepo-com.svg);
 }
+#skills h3 {
+  margin-top: 2em;
+  margin-bottom: 0em;
+  
+  color: #c4e9e98b;
+}
+#skills .others {
+  position: relative;
+  display: grid;
+  left: -.5em;
+  gap: 7px;
+  grid-template-columns: repeat(5, 1fr);
+}
 
+#skills .programing .html {
+  animation: animatex linear 150ms;
+  position: relative;
+}
+#skills .programing .css {
+  animation: animatex linear 300ms;
+  position: relative;
+}
+#skills .programing .javascript {
+  animation: animatex linear 450ms;
+  position: relative;
+}
+#skills .programing .react {
+  animation: animatex linear 600ms;
+  position: relative;
+}
+#skills .programing .tailwind {
+  animation: animatex linear 750ms;
+  position: relative;
+}
+#skills .programing .nextjs {
+  animation: animatex linear 900ms;
+  position: relative;
+}
+#skills .programing .database {
+  animation: animatex linear 1050ms;
+  position: relative;
+}
+#skills .programing .npm {
+  animation: animatex linear 1200ms;
+  position: relative;
+}
+#skills .programing .git {
+  animation: animatex linear 1350ms;
+  position: relative;
+}
 @keyframes animate {
   0% {
     left: -2em;
@@ -59,78 +106,96 @@
     left: 0.2em;
   }
 }
+@keyframes animatex {
+  0% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
 @media (max-width: 1180px) {
-  #skills div {
+  #skills .programing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #skills .others {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 960px) {
-  #skills div {
-    grid-template-columns: repeat(3, 1fr);
+  #skills .programing {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
   #skills h1 {
     font-size: large;
   }
-  #skills div span {
+  #skills .programing span {
     width: 7em;
   }
-  #skills div span i,
-  #skills div span img {
+  #skills .programing span i,
+  #skills .programing span img {
     margin-left: 6.5em;
+  }
+  #skills .others {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 640px) {
-  #skills div {
+  #skills .others {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #skills .programing {
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 1.5em;
   }
-  #skills div span {
+  #skills .programing span {
     width: 0em;
   }
-  #skills div span h4 {
+  #skills .programing span h4 {
     display: none;
   }
-  #skills div span i,
-  #skills div span img {
+  #skills .programing span i,
+  #skills .programing span img {
     padding: 0.4em;
     margin-left: 1.8em;
   }
-  #skills div span i:hover::before {
+  #skills .programing span i:hover::before {
     font-size: x-small;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  #skills div span .fa-html5:hover::before {
+  #skills .programing span .fa-html5:hover::before {
     content: "HTML";
   }
-  #skills div span .fa-css3-alt:hover::before {
+  #skills .programing span .fa-css3-alt:hover::before {
     content: "CSS";
   }
-  #skills div span .fa-js:hover::before {
+  #skills .programing span .fa-js:hover::before {
     content: "JAVA" "SCRIPT";
     font-size: 0.4rem;
   }
 
-  #skills div span .fa-tailwind:hover::before {
+  #skills .programing span .fa-tailwind:hover::before {
     content: "TAILWIND";
     color: lightseagreen;
   }
-  #skills div span .fa-nextjs:hover::before {
+  #skills .programing span .fa-nextjs:hover::before {
     content: "NEXT";
     color: white;
   }
-  #skills div span .fa-react:hover::before {
+  #skills .programing span .fa-react:hover::before {
     content: "REACT";
   }
-  #skills div span .fa-database:hover::before {
+  #skills .programing span .fa-database:hover::before {
     content: "MYSQL";
   }
-  #skills div span .fa-npm:hover::before {
+  #skills .programing span .fa-npm:hover::before {
     content: "NPM";
   }
-  #skills div span .fa-git:hover::before {
+  #skills .programing span .fa-git:hover::before {
     content: "GIT";
   }
 }

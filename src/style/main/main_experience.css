@@ -1,0 +1,76 @@
+#experience{
+  color: rgba(138, 159, 189, 0.658);
+  position: relative;
+  top: 5em;
+  left: 25vw;
+  z-index: 0;
+  width: 50%;
+  cursor: default;
+  
+}
+
+#experience .academics {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap: 20px;
+  animation: animate linear 1000ms;
+
+} 
+#experience .academics .school {
+  background-color: rgb(54, 59, 76);
+  border: 3px solid whitesmoke;
+  width: 8em;
+  text-align: center;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-bottom: 1.5em;
+  border-bottom-left-radius: 90px ;
+  border-bottom-right-radius: 90px ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgba(228, 247, 244, 0.797);
+}
+
+#experience .work {
+  animation: animate linear 1000ms;
+  text-align: center;
+  background-color: rgb(54, 59, 76);
+  border: 3px solid whitesmoke;
+  border-radius: 25px;
+  padding: 2em;
+  color: rgba(228, 247, 244, 0.926);
+ 
+}
+#experience .work h4{
+  color: white;
+}
+#experience div:hover {
+  font-size: medium;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+@media (max-width:1180px) {
+#experience div { 
+  font-size: small;
+}
+}
+@media (max-width: 768px) {
+  #experience div{
+    font-size: x-small;
+  }
+  #experience div:hover {
+    font-size: small;
+  }
+  #experience .work:hover {
+    font-size: small;
+    overflow: hidden;
+    height: 15em;
+  }
+  
+}

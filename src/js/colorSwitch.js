@@ -1,7 +1,9 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
-    const textElements = document.querySelectorAll(".toggle-text");
     const toggleSwitch = document.getElementById("toggleSwitch");
+    const textElements = document.querySelectorAll(".toggle-text");
+    const textElementShadows = document.querySelector(".school");
+    const textElementShadowsWork = document.querySelector(".work");
 
     // Set initial color for all text elements
     textElements.forEach(textElement => {
