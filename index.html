@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/style/main/main_about.css" />
     <link rel="stylesheet" href="src/style/main/main_skills.css" />
     <link rel="stylesheet" href="src/style/main/main_experience.css" />
+    <link rel="stylesheet" href="src/style/main/main_collection.css" />
     <link rel="icon" href="src/assets/images/foto1-circle.png" />
   </head>
   <body>
@@ -26,16 +27,24 @@
       <nav>
         <ol>
           <li>
-            <a href="#" id="aboutNavbar"><span class="toggle-text">01. </span>About</a>
+            <a href="#" id="aboutNavbar"
+              ><span class="toggle-text">01. </span>About</a
+            >
           </li>
           <li>
-            <a href="#" id="skillsNavbar" ><span class="toggle-text">02. </span>Skills</a>
+            <a href="#" id="skillsNavbar"
+              ><span class="toggle-text">02. </span>Skills</a
+            >
           </li>
           <li>
-            <a href="#" id="experienceNavbar"><span class="toggle-text">03. </span>Experience</a>
+            <a href="#" id="experienceNavbar"
+              ><span class="toggle-text">03. </span>Experience</a
+            >
           </li>
           <li>
-            <a href="#" id="collectionsNavbar"><span class="toggle-text">04. </span>Collections</a>
+            <a href="#" id="collectionsNavbar"
+              ><span class="toggle-text">04. </span>Collections</a
+            >
           </li>
         </ol>
         <div class="hamburger">
@@ -47,16 +56,24 @@
           </div>
           <ol class="menu">
             <li>
-              <a href="#" id="aboutNav" ><span class="toggle-text">01. </span>About</a>
+              <a href="#" id="aboutNav"
+                ><span class="toggle-text">01. </span>About</a
+              >
             </li>
             <li>
-              <a href="#" id="skillsNav"><span class="toggle-text">02. </span>Skills</a>
+              <a href="#" id="skillsNav"
+                ><span class="toggle-text">02. </span>Skills</a
+              >
             </li>
             <li>
-              <a href="#" id="experienceNav"><span class="toggle-text">03. </span>Experience</a>
+              <a href="#" id="experienceNav"
+                ><span class="toggle-text">03. </span>Experience</a
+              >
             </li>
             <li>
-              <a href="#" id="collectionsNav"><span class="toggle-text">04. </span>Collections</a>
+              <a href="#" id="collectionsNav"
+                ><span class="toggle-text">04. </span>Collections</a
+              >
             </li>
           </ol>
         </div>
@@ -102,7 +119,6 @@
           NEW FOR ME. MY FAVORITE STUDY IS PHYSICS AND THE ACTIVITIES, I LIKE TO
           SLEEP TO DREAM.
         </p>
-        
       </section>
 
       <section id="skills">
@@ -129,11 +145,12 @@
           ></span>
           <span class="tailwind"
             ><h4>TAILWIND</h4>
-            <i class="fa-tailwind"></i></span>
+            <i class="fa-tailwind"></i
+          ></span>
           <span class="nextjs"
             ><h4>NEXT</h4>
             <i class="fa-nextjs"></i>
-        </span>
+          </span>
           <span class="database"
             ><h4>MYSQL</h4>
             <i class="fa-solid fa-database" style="color: rgb(41, 115, 161)"></i
@@ -160,42 +177,59 @@
       </section>
 
       <section id="experience">
-        <h2 class="toggle-text">Academics</h2>
-        <div class="academics">
-          <div class="school">
-            <h5>SDN KORPRI 3</h5>
-            <p>2013-2016</p>
-          </div>
-          <div class="school">
-            <h5>MI THARIQUL JANNAH</h5>
-            <p>2016-2019</p>
-          </div>
-          <div class="school">
-            <h5>MTS ALHIJRAH</h5>
-            <p>2019-2022</p>
-          </div>
-          <div class="school">
-            <h5>SMK PASUNDAN 2 BANJARAN</h5>
-            <p>2022 - NOW</p>
-          </div>
+        <div class="experience-switch">
+          <button type="button" class="sliderAcademic" onclick="sliderAcademic()">Academics</button>
+          <button type="button" class="sliderWork" onclick="sliderWork()">Works</button>
         </div>
-        <h2 class="toggle-text">Work</h2>
-        <div class="work toggle-tex">
-          <h4>DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN BANDUNG</h4>
-          <p>T I K | Januari 2024 - Maret 2024</p>
-          <p>DISKOMINFO Kabupaten Bandung adalah
-            salah satu Perangkat Daerah Kabupaten Bandung, yang bertugas untuk membantu
-            Bupati menyelenggarakan urusan pemerintahan dalam bidang Komunikasi,
-            Informatika, Persandian dan Statistik.</p>
-        </div>
-      </section>
         
+
+        <div class="academics">
+          <h2><span class="toggle-text">Academics</span></h2>
+          <div class="selection">
+            <span class="pointbar"></span>
+          </div>
+          <div class="school">
+            <h4>Korpri 3 Elementary School (2013-2016)</h4>
+          </div>
+          <div class="school">
+            <h4>Thariqul Jannah Islamic Elementary School (2016-2019)</h4>
+          </div>
+          <div class="school">
+            <h4>Alhijrah Islamic Middle School (2019-2022)</h4>
+          </div>
+          <div class="school">
+            <h4>Pasundan 2 Banjaran Vocational Highschool (2021 - 2025)</h4>
+          </div>
+          <div class="achievement">
+            <a href="achievement.html">
+              <button>Achievement</button>
+            </a>
+          </div>
+        </div>
+        <div class="works">
+          <h2><span class="toggle-text">Works</span></h2>
+          <div class="selection">
+            <span class="pointbar"></span>
+          </div>
+          <div class="office">
+            <h4>Field Work Practice at Diskominfo Bandung Regency (2024-2024)</h4>
+          </div>
+        </div> 
+      </section>
+
+      <section id="collections">
+        <h2 class="toggle-text">Collections</h2>
+        <button id="showReposButton">Show Repos</button>
+        <div id="reposList"></div>
+      </section>
+
       <label class="switch">
         <input type="checkbox" id="toggleSwitch" />
         <span class="slider round"></span>
       </label>
     </main>
 
+    <script src="src/api/api.js"></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/colorSwitch.js"></script>
     <script src="src/js/hamburger.js"></script>

@@ -1,0 +1,7 @@
+#collections {
+  color: rgba(138, 159, 189, 0.658);
+  position: relative;
+  left: 25vw;
+  z-index: 0;
+  width: 50%;
+}

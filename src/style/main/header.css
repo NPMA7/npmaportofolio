@@ -72,7 +72,7 @@ header nav .hamburger {
   }
   header nav .hamburger ol {
     width: 2em;
-    top: 3em;
+    top: 2vh;
     left: -2em;
     z-index: 1;
   }

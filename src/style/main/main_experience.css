@@ -1,76 +1,81 @@
-#experience{
+#experience {
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary:#84e6ffef;
+  --text-secondary:#84e6ffef;
+  --text-optional:rgba(60, 248, 69, 0.811);
+  --text-small:#c4e9e98b;
+  --experience-color: rgba(138, 159, 189, 0.658);
   color: rgba(138, 159, 189, 0.658);
   position: relative;
-  top: 5em;
   left: 25vw;
   z-index: 0;
   width: 50%;
-  cursor: default;
-  
 }
-
 #experience .academics {
+  display: none;
+  display: block;
+}
+
+#experience .works {
+  display: block;
+  display: none;  
+}
+
+#experience .experience-switch {
+  text-align: center;
+}
+#experience .experience-switch button {
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: grey; 
+}
+
+#experience .experience-switch button.active.green {
+  background-color: var(--text-optional); 
+}
+
+#experience .experience-switch button.active.blue {
+  background-color: var(--text-secondary); 
+}
+
+
+#experience h2 {
+  color: var(--text-optional);
+}
+
+
+#experience .selection{
+  left: 305px;
+  top: 100px;
+  color: var(--experience-color);
   display: flex;
-  justify-content: space-around;
-  align-items: end;
-  gap: 20px;
-  animation: animate linear 1000ms;
-
-} 
-#experience .academics .school {
-  background-color: rgb(54, 59, 76);
-  border: 3px solid whitesmoke;
-  width: 8em;
-  text-align: center;
-  padding-right: .5em;
-  padding-left: .5em;
-  padding-bottom: 1.5em;
-  border-bottom-left-radius: 90px ;
-  border-bottom-right-radius: 90px ;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: rgba(228, 247, 244, 0.797);
+  flex-direction: column;
+  gap: 15px;
+  font-size: 15px;
 }
 
-#experience .work {
-  animation: animate linear 1000ms;
-  text-align: center;
-  background-color: rgb(54, 59, 76);
-  border: 3px solid whitesmoke;
-  border-radius: 25px;
-  padding: 2em;
-  color: rgba(228, 247, 244, 0.926);
- 
+#experience .selection .pointbar {
+  background-color: var(--experience-color);
+  width: 100%;
+  height: 2px;
+  margin-left: 0;
 }
-#experience .work h4{
-  color: white;
+
+#experience .achievement button{
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 11px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
-#experience div:hover {
-  font-size: medium;
+
+
+#experience .academics & .works{
+  color: var(--text-small);
 }
-@keyframes animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-  }
-}
-@media (max-width:1180px) {
-#experience div { 
-  font-size: small;
-}
-}
-@media (max-width: 768px) {
-  #experience div{
-    font-size: x-small;
-  }
-  #experience div:hover {
-    font-size: small;
-  }
-  #experience .work:hover {
-    font-size: small;
-    overflow: hidden;
-    height: 15em;
-  }
-  
-}
+
