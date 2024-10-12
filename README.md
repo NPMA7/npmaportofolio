@@ -3,7 +3,6 @@
 
 # Portofolio
  https://npmaportofolio.vercel.app 
- This Web Profile Portofolio For a Projects
 
-# Use
+# Bahasa Program
 PURE HTML CSS JAVASCRIPT
