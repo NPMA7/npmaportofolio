@@ -92,7 +92,7 @@ input:checked + .slider:before {
     display: none;
 }
 #experience {
-    display: block9812;
+    display: block;
     display: none;
 }
 #collections {

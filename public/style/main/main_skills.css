@@ -4,6 +4,18 @@
   left: 25vw;
   z-index: 0;
   width: 50%;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #skills h2 {
   font-size: x-large;

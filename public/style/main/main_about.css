@@ -1,55 +1,68 @@
-
-
 #about {
-  color: rgba(138, 159, 189, 0.658);
+  color: #8a9fbd;
   position: relative;
   left: 25vw;
-  z-index: 0;
   width: 50%;
+  animation: fadeIn 0.8s ease-in;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #about h2 {
-  background: -webkit-linear-gradient(#eee, #4a5f72);
+  background: linear-gradient(#eee, #4a5f72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px #353f3fb9;
+  text-shadow: 2px 2px rgba(53, 63, 63, 0.7);
   font-size: x-large;
 }
+
 #about .nama {
   letter-spacing: 3px;
-  text-shadow: 10px 10px 10px 1p0x #ffffff;
-  animation: glow linear 1000ms;
+  text-shadow: 10px 10px 10px #fff;
+  animation: glow 1s linear;
 }
+
 #about h1 {
-  animation: animate linear 600ms;
+  animation: slide-in .6s linear;
   position: relative;
   width: 100%;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  color: rgba(255, 255, 255, 0.658);
+  padding: 0 .5em;
+  color: rgba(255, 255, 255, 0.7);
   font-size: xx-large;
-  text-shadow: 3px 2px #09747e8f;
+  text-shadow: 3px 2px rgba(9, 116, 126, 0.6);
 }
 
 #about h4 {
-  color: #e1ffffef;
+  color: #e1ffff;
   letter-spacing: 3px;
   margin-top: -1em;
 }
+
 #about .intro {
   padding-top: 1em;
 }
 
-@keyframes animate {
-  0% {
+@keyframes slide-in {
+  from {
     left: -2em;
     opacity: 0;
   }
-  100% {
-    left: 0.2em;
+  to {
+    left: .2em;
   }
 }
+
 @keyframes glow {
-  100% {
+  to {
     filter: brightness(10);
   }
 }

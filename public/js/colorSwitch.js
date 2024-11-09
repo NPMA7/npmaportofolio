@@ -1,79 +1,49 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleSwitch = document.getElementById("toggleSwitch");
-    const textElements = document.querySelectorAll(".toggle-text");
-    const expSwitchColorWork = document.querySelector(".sliderWork");
-    const expSwitchColorAcademic = document.querySelector(".sliderAcademic");
-  
-    // Set initial color for all text elements
-    textElements.forEach(textElement => {
-      textElement.classList.add("green");
-    });
-  
-    toggleSwitch.addEventListener("change", function() {
-      textElements.forEach(textElement => {
-        if (toggleSwitch.checked) {
-          textElement.classList.remove("green");
-          textElement.classList.add("blue");
-        } else {
-          textElement.classList.remove("blue");
-          textElement.classList.add("green");
-        }
-      });
-  
-     updateButtonColors();
-    });
-  
-    function sliderAcademic() {
-      const academics = document.querySelector(".academics");
-      const works = document.querySelector(".works");
-  
-      academics.style.display = "block";
-      works.style.display = "none";
-  
-      expSwitchColorAcademic.classList.add("active");
-      expSwitchColorWork.classList.remove("active");
-  
-      updateButtonColors();
-    }
-  
-    function sliderWork() {
-      const academics = document.querySelector(".academics");
-      const works = document.querySelector(".works");
-  
-      academics.style.display = "none";
-      works.style.display = "block";
-  
-      expSwitchColorWork.classList.add("active");
-      expSwitchColorAcademic.classList.remove("active");
-  
-      updateButtonColors();
-    }
-  
-    function updateButtonColors() {
-      if (toggleSwitch.checked) {
-         if (expSwitchColorAcademic.classList.contains("active")) {
-          expSwitchColorAcademic.classList.add("blue");
-          expSwitchColorAcademic.classList.remove("green");
-        }
-        if (expSwitchColorWork.classList.contains("active")) {
-          expSwitchColorWork.classList.add("blue");
-          expSwitchColorWork.classList.remove("green");
-        }
-      } else {
-        if (expSwitchColorAcademic.classList.contains("active")) {
-          expSwitchColorAcademic.classList.add("green");
-          expSwitchColorAcademic.classList.remove("blue");
-        }
-        if (expSwitchColorWork.classList.contains("active")) {
-          expSwitchColorWork.classList.add("green");
-          expSwitchColorWork.classList.remove("blue");
-        }
-      }
-    }
-  
-    sliderAcademic();
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleSwitch = document.getElementById("toggleSwitch");
+  const textElements = document.querySelectorAll(".toggle-text");
+  const expSwitchColorWork = document.querySelector(".sliderWork");
+  const expSwitchColorAcademic = document.querySelector(".sliderAcademic");
+  const academics = document.querySelector(".academics");
+  const works = document.querySelector(".works");
+
+  // Set initial color
+  textElements.forEach(el => el.classList.add("green"));
+
+  // Toggle switch handler
+  toggleSwitch.addEventListener("change", () => {
+    const newClass = toggleSwitch.checked ? "blue" : "green";
+    const oldClass = toggleSwitch.checked ? "green" : "blue";
     
-    window.sliderAcademic = sliderAcademic;
-    window.sliderWork = sliderWork;
+    textElements.forEach(el => {
+      el.classList.replace(oldClass, newClass);
+    });
+
+    updateActiveSlider();
   });
-  
+
+  function updateActiveSlider() {
+    const activeSlider = document.querySelector(".active");
+    if (!activeSlider) return;
+
+    const color = toggleSwitch.checked ? "blue" : "green";
+    activeSlider.classList.remove("blue", "green");
+    activeSlider.classList.add(color);
+  }
+
+  function switchView(showAcademic) {
+    academics.style.display = showAcademic ? "block" : "none";
+    works.style.display = showAcademic ? "none" : "block";
+    
+    expSwitchColorAcademic.classList.toggle("active", showAcademic);
+    expSwitchColorWork.classList.toggle("active", !showAcademic);
+    
+    updateActiveSlider();
+  }
+
+  // Initialize view
+  switchView(true);
+
+  // Export functions
+  window.sliderAcademic = () => switchView(true);
+  window.sliderWork = () => switchView(false);
+});

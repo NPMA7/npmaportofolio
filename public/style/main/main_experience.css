@@ -10,72 +10,148 @@
   left: 25vw;
   z-index: 0;
   width: 50%;
+  margin-top: 30px;
+  animation: fadeIn 0.8s ease-in;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #experience .academics {
   display: none;
   display: block;
+  transition: transform 0.3s ease;
 }
 
 #experience .works {
   display: block;
-  display: none;  
+  display: none;
+  transition: transform 0.3s ease;
 }
 
 #experience .experience-switch {
   text-align: center;
 }
+
 #experience .experience-switch button {
   color: black;
   font-weight: 600;
-  font-size: 13px;
-  padding: 10px;
-  width: 100px;
-  border-radius: 5px;
-  background-color: grey; 
+  font-size: 15px;
+  padding: 12px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: grey;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 5px;
+}
+
+#experience .experience-switch button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 #experience .experience-switch button.active.green {
-  background-color: var(--text-optional); 
+  background-color: var(--text-optional);
+  animation: pulseGreen 1.5s infinite;
 }
 
 #experience .experience-switch button.active.blue {
-  background-color: var(--text-secondary); 
+  background-color: var(--text-secondary);
+  animation: pulseBlue 1.5s infinite;
 }
 
+@keyframes pulseGreen {
+  0% { box-shadow: 0 0 0 0 rgba(60, 248, 69, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(60, 248, 69, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(60, 248, 69, 0); }
+}
+
+@keyframes pulseBlue {
+  0% { box-shadow: 0 0 0 0 rgba(132, 230, 255, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(132, 230, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(132, 230, 255, 0); }
+}
 
 #experience h2 {
   color: var(--text-optional);
+  transition: color 0.3s ease;
 }
 
+#experience h2:hover {
+  color: var(--text-secondary);
+}
 
-#experience .selection{
+#experience .selection {
   left: 305px;
   top: 100px;
   color: var(--experience-color);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   font-size: 15px;
 }
 
 #experience .selection .pointbar {
   background-color: var(--experience-color);
-  width: 100%;
+  width: 0;
   height: 2px;
   margin-left: 0;
+  animation: growLine 1s ease forwards;
 }
 
-#experience .achievement button{
-  color: var(--text-primary);
+@keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+#experience .achievement button {
+  color: var(--text-secondary);
   font-weight: 600;
   font-size: 11px;
-  background-color: black;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 11px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--text-optional);
+  background: linear-gradient(45deg, var(--bg-primary), rgba(54, 59, 76, 0.8));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+#experience .achievement button:hover {
+  background-color: var(--text-optional);
+  color: var(--text-primary);
+  transform: scale(1.05);
+}
 
-#experience .academics & .works{
+#experience .academics & .works {
   color: var(--text-small);
 }
 
+#experience .school,
+#experience .office {
+  padding: 1px;
+  margin: 0.5em 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#experience .school:hover,
+#experience .office:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px);
+}

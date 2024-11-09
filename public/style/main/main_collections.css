@@ -1,0 +1,129 @@
+#collections {
+  --collections-color: rgba(228, 247, 244, 0.8);
+  position: relative;
+  left: 25vw;
+  width: 50%;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container_repo {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.container_repo::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container_repo::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .1);
+  border-radius: 4px;
+}
+
+.container_repo::-webkit-scrollbar-thumb {
+  background: var(--collections-color);
+  border-radius: 4px;
+}
+
+.repo-data {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  transition: transform .3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.repo-data:hover {
+  background: rgba(255, 255, 255, .05);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+
+.repo-name {
+  color: var(--collections-color);
+  font-size: 1.1rem;
+  flex: 1;
+  letter-spacing: 1px;
+}
+
+.repo-desc {
+  color: #fff;
+  font-size: .9rem;
+  margin: 0;
+  flex: 2;
+  padding: 0 1rem;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: .8rem;
+  color: var(--collections-color);
+  align-items: center;
+}
+
+.repo-stats span {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.repo-stats i {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_repo {
+    padding-right: .5rem;
+    max-height: 60vh;
+  }
+  
+  .repo-data {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: .8rem;
+  }
+  
+  .repo-name, .repo-desc {
+    width: 100%;
+  }
+  
+  .repo-name {
+    font-size: 1rem;
+  }
+  
+  .repo-desc {
+    padding: .5rem 0;
+    font-size: .8rem;
+  }
+  
+  .repo-stats {
+    width: 100%;
+    justify-content: flex-start;
+    gap: .8rem;
+  }
+  
+  .repo-stats i {
+    font-size: .9rem;
+  }
+}
