@@ -4,6 +4,7 @@
   left: 25vw;
   width: 50%;
   padding: 2rem;
+  margin-top: 10px;
   animation: fadeIn 0.8s ease-in;
 }
 
