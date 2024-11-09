@@ -5,4 +5,4 @@
  https://npmaportofolio.vercel.app 
 
 # Bahasa Program
-PURE HTML CSS JAVASCRIPT
+HTML CSS JAVASCRIPT
