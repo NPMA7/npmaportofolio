@@ -41,10 +41,10 @@
   width: 20px;
 }
 #skills .programing span .fa-nextjs::before {
-  content: url(/src/assets/svg/nextjs-icon-svgrepo-com.svg);
+  content: url(/public/assets/svg/nextjs-icon-svgrepo-com.svg);
 }
 #skills .programing span .fa-tailwind::before {
-  content: url(/src/assets/svg/tailwindcss-svgrepo-com.svg);
+  content: url(/public/assets/svg/tailwindcss-svgrepo-com.svg);
 }
 #skills h3 {
   margin-top: 2em;
